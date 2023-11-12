@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #031833; 
+  background-image:  url('./images/home.png'),url('./images/dot.png');
+  background-repeat: no-repeat,no-repeat;
+  background-size: 550px 400px , 1600px 800px;
+  background-position: 80% 60% ,  40% 20%;
+  background-attachment: fixed, fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body,
+html,
+.Route,
+#root{
+  width: 100%;
+  height: 100%;  
+}
+
+.auth-wrapper {
+  width: 900px;
+  height: 800px;
+}
+
+.navbar-light {
+  background-color: white;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  height: 60px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(50, 49, 49);
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar-brand {
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar-brand {
+  margin-right: 100px; /* Adjust the value to control the gap */
+  margin-left: 100px;
+}
+/* If you want to change the color of the navbar toggler (hamburger icon) when it's collapsed */
+.navbar-light .navbar-toggler-icon {
+  background-color: white;
+  
+}
+.navbar-nav .nav-item {
+  margin-right: 40px; /* Adjust the value to control the gap */
+}
+.navbar-nav .nav-item .nav-link {
+  text-decoration: none; /* Remove default underline */
+  font-size: 18px; /* Initial font size */
+  transition: all 0.8s ease; /* Add a transition effect */
+}
+.navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline; /* Add an underline effect */
+  font-size: 20px; /* Increase the font size */
+}
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(255, 255, 255, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
