@@ -139,7 +139,7 @@ function App() {
 
     setIsProcessing(true);
 
-    fetch("http://localhost:5000/process", {
+    fetch("https://solidity-analyzer-python-server.onrender.com/process", {
       method: "POST",
       body: formData,
     })
@@ -175,7 +175,7 @@ function App() {
 
     if (token) {
       // Token is present, allow the download
-      const updateCountsUrl = "http://localhost:5001/updateCounts"; // Change the URL to your actual endpoint
+      const updateCountsUrl = "https://solidity-analyzer-python-server.onrender.com/updateCounts"; // Change the URL to your actual endpoint
       fetch(updateCountsUrl, {
         method: "POST",
         headers: {
@@ -187,7 +187,7 @@ function App() {
         .then((data) => {
           if (data.status === "ok") {
             // Counts updated successfully, allow the download
-            window.open("http://localhost:5000/" + downloadPath);
+            window.open("https://solidity-analyzer-python-server.onrender.com/" + downloadPath);
           } else {
             // Show an error message related to counts
             alert("Error: " + data.data);

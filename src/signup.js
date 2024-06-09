@@ -19,7 +19,7 @@ export default class SignUp extends Component {
 
     e.preventDefault();
     console.log(fname, lname, email, password);
-    fetch("http://localhost:5001/register", {
+    fetch("https://solidity-analyzer-node-server-dev-prd.vercel.app/register", {
       method: "POST",
       crossDomain: true,
       headers: {

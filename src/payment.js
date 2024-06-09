@@ -30,7 +30,7 @@ export default class Payment extends Component {
     }
 
     // If both fields are valid, make the API call and handle the response
-    fetch("http://localhost:5001/updateBankDetails", {
+    fetch("https://solidity-analyzer-node-server-dev-prd.vercel.app/updateBankDetails", {
       method: "POST",
       crossDomain: true,
       headers: {

@@ -16,7 +16,7 @@ export default class UserData extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:5001/userData", {
+    fetch("https://solidity-analyzer-node-server-dev-prd.vercel.app/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
